@@ -1,0 +1,5 @@
+﻿CREATE TABLE [Table]
+(
+	[Id] INT NOT NULL PRIMARY KEY , 
+    [Nome] NCHAR(10) NOT NULL DEFAULT 
+)

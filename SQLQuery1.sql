@@ -1,0 +1,1 @@
+﻿INSERT INTO Usuario (Email, Senha, Nome, Apelido, Imagem, Nascimento) VALUES('aa', 'aa', 'aa', 'aa', 'picture', '23/09/2022')
