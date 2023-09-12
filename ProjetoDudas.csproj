@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B3F14D8D-9523-4F35-9F0B-7F706EE6FDF8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjetoDudas</RootNamespace>
+    <AssemblyName>ProjetoDudas</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_login\Form_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_login\Form_login.designer.cs">
+      <DependentUpon>Form_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jogo\Fase 1\CaixaMunição.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Jogo\Fase 1\HydraShip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Jogo\Fase 1\IronMan.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Jogo\Fase 1\IronManForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jogo\Fase 1\IronManForm.Designer.cs">
+      <DependentUpon>IronManForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jogo\Fase 1\Míssil.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Jogo\Fase 1\Projétil.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Jogo\Fase 1\SelectStageScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jogo\Fase 1\Vida.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Jogo\Fase 2\Abominável.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Jogo\Fase 2\Hulk.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Jogo\Fase 2\HulkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jogo\Fase 2\HulkForm.Designer.cs">
+      <DependentUpon>HulkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jogo\Fase 2\ProjétilHulk.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Jogo\Fase 2\Resources\Personagem.cs" />
+    <Compile Include="Jogo\GlobalResources.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Tela Inicial e BD\DataBaseManager.cs" />
+    <Compile Include="Tela Inicial e BD\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela Inicial e BD\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_login\Form_login.resx">
+      <DependentUpon>Form_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jogo\Fase 1\IronManForm.resx">
+      <DependentUpon>IronManForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jogo\Fase 1\SelectStageScreen.resx">
+      <DependentUpon>SelectStageScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jogo\Fase 2\HulkForm.resx">
+      <DependentUpon>HulkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela Inicial e BD\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TCC_1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TCC_1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>TCC_1.mdf</DependentUpon>
+    </Content>
+    <None Include="Jogo\Fase 1\Resources\Cenário\NewYorkStage1.jpg" />
+    <None Include="Jogo\Fase 1\Resources\HydraShip\HydraShipMorte\hydrashipdamaged1.png" />
+    <None Include="Jogo\Fase 1\Resources\HydraShip\HydraShipMorte\HydraShipDamaged2.png" />
+    <None Include="Jogo\Fase 1\Resources\HydraShip\HydraShipMorte\HydraShipExplosion3.png" />
+    <None Include="Jogo\Fase 1\Resources\HydraShip\HydraShipMorte\HydraShipExplosion4.png" />
+    <None Include="Jogo\Fase 1\Resources\HydraShip\HydraShipMorte\HydraShipExplosion5.png" />
+    <None Include="Jogo\Fase 1\Resources\HydraShip\HydraShipMorte\HydraShipExplosion6.png" />
+    <None Include="Jogo\Fase 1\Resources\HydraShip\HydraShipMorte\HydraShipExplosion7.png" />
+    <None Include="Jogo\Fase 1\Resources\HydraShip\HydraShipVoando\HydraShipVoando1.png" />
+    <None Include="Jogo\Fase 1\Resources\HydraShip\HydraShipVoando\HydraShipVoando2.png" />
+    <None Include="Jogo\Fase 1\Resources\HydraShip\Projéteis\Míssil1.png" />
+    <None Include="Jogo\Fase 1\Resources\HydraShip\Projéteis\Míssil2.png" />
+    <None Include="Jogo\Fase 1\Resources\HydraShip\Sons\hydrashipexplosionsound1.wav" />
+    <None Include="Jogo\Fase 1\Resources\IronMan\IronManAtirando\ironmanatirando_01.png" />
+    <None Include="Jogo\Fase 1\Resources\IronMan\IronManAtirando\ironmanatirando_02.png" />
+    <None Include="Jogo\Fase 1\Resources\IronMan\IronManAtirando\ironmanatirando_03.1.png" />
+    <None Include="Jogo\Fase 1\Resources\IronMan\IronManAtirando\ironmanatirando_03.2.png" />
+    <None Include="Jogo\Fase 1\Resources\IronMan\IronManAtirando\ironmanatirando_03.3.png" />
+    <None Include="Jogo\Fase 1\Resources\IronMan\IronManAtirando\ironmanatirando_03.4.png" />
+    <None Include="Jogo\Fase 1\Resources\IronMan\IronManAtirando\ironmanatirando_04.1.png" />
+    <None Include="Jogo\Fase 1\Resources\IronMan\IronManAtirando\ironmanatirando_04.2.png" />
+    <None Include="Jogo\Fase 1\Resources\IronMan\IronManAtirando\ironmanatirando_04.3.png" />
+    <None Include="Jogo\Fase 1\Resources\IronMan\IronManAtirando\ironmanatirando_04.4.png" />
+    <None Include="Jogo\Fase 1\Resources\IronMan\IronManAtirando\ironmanatirando_05.png" />
+    <None Include="Jogo\Fase 1\Resources\IronMan\IronManMorte\ironmanexplosão_01.png" />
+    <None Include="Jogo\Fase 1\Resources\IronMan\IronManMorte\ironmanexplosão_02.png" />
+    <None Include="Jogo\Fase 1\Resources\IronMan\IronManMorte\ironmanexplosão_03.png" />
+    <None Include="Jogo\Fase 1\Resources\IronMan\IronManMorte\ironmanexplosão_04.png" />
+    <None Include="Jogo\Fase 1\Resources\IronMan\IronManMorte\ironmanexplosão_05.png" />
+    <None Include="Jogo\Fase 1\Resources\IronMan\IronManMorte\ironmanexplosão_06.png" />
+    <None Include="Jogo\Fase 1\Resources\IronMan\IronManMorte\ironmanexplosão_07.png" />
+    <None Include="Jogo\Fase 1\Resources\IronMan\IronManVoando\ironmanvoandoparado1.png" />
+    <None Include="Jogo\Fase 1\Resources\IronMan\IronManVoando\ironmanvoandoparado2.png" />
+    <None Include="Jogo\Fase 1\Resources\IronMan\Sons\laser.wav" />
+    <None Include="Jogo\Fase 1\Resources\StageScreen\deadpoolstagelocked1.jpg" />
+    <None Include="Jogo\Fase 1\Resources\StageScreen\ironmanstage1.jpg" />
+    <None Include="Jogo\Fase 1\Resources\StageScreen\lockedstage1.jpg" />
+    <Content Include="Jogo\Fase 1\Resources\Caixa de Munição\ArcReactor.png" />
+    <Content Include="Jogo\Fase 1\Resources\Caixa de Munição\ArcReactorMin.png" />
+    <Content Include="Jogo\Fase 1\Resources\HydraShip1.png" />
+    <Content Include="Jogo\Fase 1\Resources\HydraShip2.png" />
+    <Content Include="Jogo\Fase 1\Resources\hydrashipdamaged_1.png" />
+    <Content Include="Jogo\Fase 1\Resources\hydrashipdamaged_2.png" />
+    <Content Include="Jogo\Fase 1\Resources\HydraShipDamaged_EXPLODIDA.png" />
+    <Content Include="Jogo\Fase 1\Resources\HydraShipVoando_1.png" />
+    <Content Include="Jogo\Fase 1\Resources\HydraShipVoando_2.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\IronManAttacking\IronManAtirando_01.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\IronManAttacking\IronManAtirando_02.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\IronManAttacking\IronManAtirando_03.1.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\IronManAttacking\IronManAtirando_03.2.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\IronManAttacking\IronManAtirando_03.3.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\IronManAttacking\IronManAtirando_03.4.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\IronManAttacking\IronManAtirando_04.1.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\IronManAttacking\IronManAtirando_04.2.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\IronManAttacking\IronManAtirando_04.3.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\IronManAttacking\IronManAtirando_04.4.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\IronManAttacking\IronManAtirando_05.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\IronManDeath\IronManDamaged.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\IronManDeath\IronManExplosion2.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\IronManDeath\IronManExplosion3.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\IronManDeath\IronManExplosion4.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\IronManDeath\IronManExplosion5.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\IronManDeath\IronManExplosion6.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\IronManDeath\IronManExplosion7.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\IronManFlying\IronManFlying1.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\IronManFlying\IronManFlying2.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\Projéteis\Projétil_1.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\Projéteis\Projétil_2.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\Projéteis\Projétil_3.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\Projéteis\Projétil_4.png" />
+    <Content Include="Jogo\Fase 1\Resources\IronMan\Projéteis\Projétil_5.png" />
+    <Content Include="Jogo\Fase 1\Resources\menu_1_hulk.wav" />
+    <Content Include="Jogo\Fase 1\Resources\menu_1_ironman.wav" />
+    <Content Include="Jogo\Fase 1\Resources\menu_2_hulk.wav" />
+    <Content Include="Jogo\Fase 1\Resources\menu_2_ironman.wav" />
+    <Content Include="Jogo\Fase 1\Resources\menu_prin_original.wav" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Arremessando\Com pedra\AbominávelArremessando_01.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Arremessando\Com pedra\AbominávelArremessando_02.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Arremessando\Com pedra\AbominávelArremessando_03.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Arremessando\Com pedra\AbominávelArremessando_04.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Arremessando\Com pedra\AbominávelArremessando_05.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Arremessando\Com pedra\AbominávelArremessando_06.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Arremessando\Sem pedra\AbominávelArremessando_01.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Arremessando\Sem pedra\AbominávelArremessando_02.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Arremessando\Sem pedra\AbominávelArremessando_03.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Arremessando\Sem pedra\AbominávelArremessando_04.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Arremessando\Sem pedra\AbominávelArremessando_05.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Arremessando\Sem pedra\AbominávelArremessando_06.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Atacando\AbominávelAtacando_01.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Atacando\AbominávelAtacando_02.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Atacando\AbominávelAtacando_03.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Atacando\AbominávelAtacando_04.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Aterrisando\AbominávelAterrisando_01.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Aterrisando\AbominávelAterrisando_02.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Aterrisando\AbominávelAterrisando_03.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Parado\AbominávelParado_01.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Parado\AbominávelParado_02.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Projétil\PedraAbominável.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Pulando\AbominávelPulando_01.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Pulando\AbominávelPulando_02.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Sons\Ambiente\City Under Attack - War Sound Effects.wav" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Sons\Ambiente\Half-Life - Seven Hour War Ambience.wav" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Sons\Rochas\RochasLevantando.wav" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Tomando Dano\AbominávelPerdendoVida_01.png" />
+    <Content Include="Jogo\Fase 2\Resources\Abominável\Tomando Dano\AbominávelPerdendoVida_02.png" />
+    <Content Include="Jogo\Fase 2\Resources\Cenário\CenárioFase2.png" />
+    <Content Include="Jogo\Fase 2\Resources\Hulk\Arremessando\HulkArremessando_01.png" />
+    <Content Include="Jogo\Fase 2\Resources\Hulk\Arremessando\HulkArremessando_02.png" />
+    <Content Include="Jogo\Fase 2\Resources\Hulk\Arremessando\HulkArremessando_03.png" />
+    <Content Include="Jogo\Fase 2\Resources\Hulk\Arremessando\HulkArremessando_04.png" />
+    <Content Include="Jogo\Fase 2\Resources\Hulk\Arremessando\HulkArremessando_05.png" />
+    <Content Include="Jogo\Fase 2\Resources\Hulk\Arremessando\HulkArremessando_06.png" />
+    <Content Include="Jogo\Fase 2\Resources\Hulk\Arremessando\HulkArremessando_07.png" />
+    <Content Include="Jogo\Fase 2\Resources\Hulk\Movendo\HulkMovendo_Direita.png" />
+    <Content Include="Jogo\Fase 2\Resources\Hulk\Movendo\HulkMovendo_Esquerda.png" />
+    <Content Include="Jogo\Fase 2\Resources\Hulk\Parado\HulkParado.png" />
+    <Content Include="Jogo\Fase 2\Resources\Hulk\Parado\HulkParado2.png" />
+    <Content Include="Jogo\Fase 2\Resources\Hulk\Projéteis\PedraHulk.png" />
+    <Content Include="Jogo\Fase 2\Resources\Hulk\Tomando Dano\HulkTomandoDano_01.png" />
+    <Content Include="Jogo\Fase 2\Resources\Hulk\Tomando Dano\HulkTomandoDano_02.png" />
+    <Content Include="Jogo\Fase 2\Resources\Hulk\Tomando Dano\HulkTomandoDano_03.png" />
+    <None Include="Resources\HulkSelecao_03.png" />
+    <None Include="Resources\DeadpoolStageLocked.jpg" />
+    <None Include="Resources\SelecaoIronMan_02.png" />
+    <None Include="Resources\HulkArremessando_05.png" />
+    <None Include="Resources\HulkArremessando_06.png" />
+    <None Include="Resources\HulkArremessando_07.png" />
+    <None Include="Resources\HulkArremessando_01.png" />
+    <None Include="Resources\HulkArremessando_02.png" />
+    <None Include="Resources\HulkArremessando_03.png" />
+    <None Include="Resources\HulkArremessando_04.png" />
+    <None Include="Resources\HulkParado.png" />
+    <None Include="Resources\HulkParado2.png" />
+    <None Include="Resources\HulkTomandoDano_01.png" />
+    <None Include="Resources\HulkTomandoDano_02.png" />
+    <None Include="Resources\HulkTomandoDano_03.png" />
+    <None Include="Resources\HulkMovendo_Direita.png" />
+    <None Include="Resources\HulkMovendo_Esquerda.png" />
+    <None Include="Resources\AbominávelArremessando_06.png" />
+    <None Include="Resources\AbominávelArremessando_01.png" />
+    <None Include="Resources\AbominávelArremessando_02.png" />
+    <None Include="Resources\AbominávelArremessando_03.png" />
+    <None Include="Resources\AbominávelArremessando_04.png" />
+    <None Include="Resources\AbominávelArremessando_05.png" />
+    <None Include="Resources\AbominávelPerdendoVida_01.png" />
+    <None Include="Resources\AbominávelPerdendoVida_02.png" />
+    <None Include="Resources\AbominávelParado_02.png" />
+    <None Include="Resources\AbominávelParado_01.png" />
+    <None Include="Resources\AbominávelAtacando_02.png" />
+    <None Include="Resources\AbominávelAtacando_03.png" />
+    <None Include="Resources\AbominávelAtacando_04.png" />
+    <None Include="Resources\AbominávelAtacando_01.png" />
+    <None Include="Resources\PedraAbominável.png" />
+    <None Include="Resources\RochasLevantando.wav" />
+    <None Include="Resources\City Under Attack - War Sound Effects.wav" />
+    <None Include="Resources\CenárioFase2.png" />
+    <None Include="Resources\PedraHulk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
