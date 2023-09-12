@@ -37,11 +37,11 @@ namespace ProjetoHerosQuest
             // Temporizador de Animação
             this.temporizadorAnimação.Interval = 100;
             this.temporizadorAnimação.Tick += new System.EventHandler(this.temporizadorAnimaçãoVoando_Tick);
-            animaçãoImagens.Add(global::ProjetoDudas.Properties.Resources.Projétil_1);
-            animaçãoImagens.Add(global::ProjetoDudas.Properties.Resources.Projétil_2);
-            animaçãoImagens.Add(global::ProjetoDudas.Properties.Resources.Projétil_3);
-            animaçãoImagens.Add(global::ProjetoDudas.Properties.Resources.Projétil_4);
-            animaçãoImagens.Add(global::ProjetoDudas.Properties.Resources.Projétil_5);
+            animaçãoImagens.Add(global::ProjetoDudas.Properties.Resources.projétil_1);
+            animaçãoImagens.Add(global::ProjetoDudas.Properties.Resources.projétil_2);
+            animaçãoImagens.Add(global::ProjetoDudas.Properties.Resources.projétil_3);
+            animaçãoImagens.Add(global::ProjetoDudas.Properties.Resources.projétil_4);
+            animaçãoImagens.Add(global::ProjetoDudas.Properties.Resources.projétil_5);
             temporizadorAnimação.Start();
         }
 
